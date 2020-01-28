@@ -1,0 +1,19 @@
+{
+  "name": "toronto-tooling",
+  "version": "0.0.1",
+  "description": "A tooling kit for toronto's open data api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mobinni/toronto-tooling.git"
+  },
+  "author": "Mo Binni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mobinni/toronto-tooling/issues"
+  },
+  "homepage": "https://github.com/mobinni/toronto-tooling#readme"
+}
