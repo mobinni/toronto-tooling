@@ -1,5 +1,8 @@
 import * as React from "react";
 import { Select } from "baseui/select";
+import { Card } from "baseui/card";
+import { StyledLink } from "baseui/link";
+
 import { years } from "../data";
 import { head, isNil, propOr, remove, reduce } from "ramda";
 import { useEffect } from "react";
@@ -121,7 +124,14 @@ export const GarbageCollection = () => {
   }, [selected]);
 
   return (
-    <>
+    <Card overrides={{ Root: { style: { width: "80vw", margin: "0 auto" } } }}>
+      <p>
+        Visit{" "}
+        <StyledLink target="_blank" href="https://www.toronto.ca/services-payments/recycling-organics-garbage/houses/collection-schedule/">
+          Toronto's Garbage Portal
+        </StyledLink>{" "}
+        to figure out what calendar group you are in.
+      </p>
       <Select
         options={[{ label: "2020", id: "2020", value: years["2020"] }]}
         value={value}
@@ -139,6 +149,6 @@ export const GarbageCollection = () => {
           setSelected(params.value);
         }}
       />
-    </>
+    </Card>
   );
 };
